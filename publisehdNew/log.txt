@@ -1,0 +1,68 @@
+2021-10-11 09:48:53.727 +07:00 [INF] Starting host...
+2021-10-11 09:48:54.023 +07:00 [FTL] Host terminated unexpectedly.
+Internal.Cryptography.CryptoThrowHelper+WindowsCryptographicException: The system cannot find the file specified.
+   at Internal.Cryptography.Pal.CertificatePal.FromBlobOrFile(ReadOnlySpan`1 rawData, String fileName, SafePasswordHandle password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate..ctor(String fileName, String password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password)
+   at GetStarted.Startup.ConfigureServices(IServiceCollection services) in G:\SourceCodeWebApp\IdentityServer4\GetStarted\GetStarted\Startup.cs:line 30
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.<>c__DisplayClass9_0.<Invoke>g__Startup|0(IServiceCollection serviceCollection)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.Invoke(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.<>c__DisplayClass8_0.<Build>b__0(IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at GetStarted.Program.Main(String[] args) in G:\SourceCodeWebApp\IdentityServer4\GetStarted\GetStarted\Program.cs:line 51
+2021-10-11 09:53:58.987 +07:00 [INF] Starting host...
+2021-10-11 09:53:59.595 +07:00 [INF] Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2021-10-11 09:53:59.603 +07:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2021-10-11 09:53:59.607 +07:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2021-10-11 09:53:59.607 +07:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2021-10-11 09:53:59.607 +07:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2021-10-11 09:53:59.607 +07:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2021-10-11 09:53:59.607 +07:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2021-10-11 09:53:59.607 +07:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2021-10-11 09:53:59.632 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-10-11 09:53:59.632 +07:00 [INF] Hosting environment: Production
+2021-10-11 09:53:59.632 +07:00 [INF] Content root path: G:\SourceCodeWebApp\IdentityServer4\GetStarted\publisehdNew
+2021-10-11 09:53:59.683 +07:00 [DBG] Login Url: /Account/Login
+2021-10-11 09:53:59.684 +07:00 [DBG] Login Return Url Parameter: ReturnUrl
+2021-10-11 09:53:59.684 +07:00 [DBG] Logout Url: /Account/Logout
+2021-10-11 09:53:59.684 +07:00 [DBG] ConsentUrl Url: /consent
+2021-10-11 09:53:59.684 +07:00 [DBG] Consent Return Url Parameter: returnUrl
+2021-10-11 09:53:59.684 +07:00 [DBG] Error Url: /home/error
+2021-10-11 09:53:59.684 +07:00 [DBG] Error Id Parameter: errorId
+2021-10-11 09:54:05.763 +07:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-10-11 09:54:05.766 +07:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-10-11 09:54:05.766 +07:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-10-11 09:54:05.767 +07:00 [DBG] Start discovery request
+2021-10-11 09:54:07.269 +07:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2021-10-11 09:54:07.269 +07:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2021-10-11 09:54:07.269 +07:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2021-10-11 09:54:07.270 +07:00 [DBG] Start discovery request
+2021-10-11 09:54:16.039 +07:00 [DBG] Request path /connect/token matched to endpoint type Token
+2021-10-11 09:54:16.110 +07:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2021-10-11 09:54:16.110 +07:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2021-10-11 09:54:16.113 +07:00 [DBG] Start token request.
+2021-10-11 09:54:16.115 +07:00 [DBG] Start client validation
+2021-10-11 09:54:16.118 +07:00 [DBG] Start parsing Basic Authentication secret
+2021-10-11 09:54:16.120 +07:00 [DBG] Start parsing for secret in post body
+2021-10-11 09:54:16.126 +07:00 [DBG] Parser found secret: PostBodySecretParser
+2021-10-11 09:54:16.126 +07:00 [DBG] Secret id found: youmed_client
+2021-10-11 09:54:16.133 +07:00 [DBG] client configuration validation for client youmed_client succeeded.
+2021-10-11 09:54:16.200 +07:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2021-10-11 09:54:16.201 +07:00 [DBG] Client validation success
+2021-10-11 09:54:16.205 +07:00 [DBG] Start token request validation
+2021-10-11 09:54:16.209 +07:00 [DBG] Start resource owner password token request validation
+2021-10-11 09:54:16.227 +07:00 [DBG] IsActive called from: ResourceOwnerValidation
+2021-10-11 09:54:16.227 +07:00 [DBG] Resource owner password token request validation success.
+2021-10-11 09:54:16.236 +07:00 [INF] Token request validation success, {"ClientId":"youmed_client","ClientName":"Youmed Credentials Client","GrantType":"password","Scopes":"ApiOne.read myApi.read myApi.write","AuthorizationCode":"********","RefreshToken":"********","UserName":"tmhtp-youmed","AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"password","client_id":"youmed_client","client_secret":"***REDACTED***","username":"tmhtp-youmed","password":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2021-10-11 09:54:16.258 +07:00 [DBG] Getting claims for access token for client: youmed_client
+2021-10-11 09:54:16.258 +07:00 [DBG] Getting claims for access token for subject: 123
+2021-10-11 09:54:16.260 +07:00 [DBG] Get profile called for subject 123 from client Youmed Credentials Client with claim types [] via ClaimsProviderAccessToken
+2021-10-11 09:54:16.262 +07:00 [DBG] Issued claims: []
+2021-10-11 09:54:16.575 +07:00 [DBG] Token request success.
+2021-10-11 10:14:41.228 +07:00 [INF] Application is shutting down...
